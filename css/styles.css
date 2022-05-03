@@ -42,8 +42,10 @@ ol {
 .main-team-list a, svg, 
 .main-clients-list a, svg,
 .team-social-links a, svg,
+.modal-input,
 .footer-info a,
-.portfolio-main-btn button, span {
+.portfolio-main-btn button, span,
+.modal-send-btn {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -239,7 +241,8 @@ a {
     border-radius: 4px;
 }
 
-.main-btn-text {
+.main-btn-text, 
+.btn-modal-form-text {
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -526,6 +529,8 @@ ul.main-img li {
     top: 50%;
     left: 50%;
 
+    padding: 40px;
+
     min-width: 528px;
     min-height: 581px;
 
@@ -556,8 +561,168 @@ ul.main-img li {
     border-radius: 50%;
 }
 
+
+
 .modal-close {
+    display: block;
     fill: #000000;
+}
+
+.btn-close-modal:hover .modal-close,
+.btn-close-modal:focus .modal-close {
+    fill: var(--active-text-color);
+}
+
+/* Modal-form */
+
+.modal-heading-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+    
+    color: #212121;
+}
+
+.modal-field-conteiner {
+
+}
+
+.modal-field {
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.input-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+}
+
+.modal-icon-position {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-name-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    fill: var(--title-nav-text-color);
+    cursor: pointer;
+}
+
+.modal-icon-position:hover .modal-input,
+.modal-icon-position:focus .modal-input {
+    border: 1px solid var(--active-text-color);
+}
+
+.modal-icon-position:hover .user-name-icon,
+.modal-icon-position:focus .user-name-icon {
+    fill: var(--active-text-color);
+}
+
+.modal-comment {
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    cursor: pointer;
+}
+
+.modal-comment::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.user-check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
+
+.modal-field:hover .modal-comment {
+    border: 1px solid var(--active-text-color);
+}
+
+.modal-checkbox {
+    margin-right: 8.38px;
+    cursor: pointer;
+}
+
+.agreement-conditions {
+    color: var(--active-text-color);
+    text-decoration-line: underline;
+}
+
+.modal-field-checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.modal-send-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    background-color: var(--active-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.modal-btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;
 }
 
 /* Footer index */
