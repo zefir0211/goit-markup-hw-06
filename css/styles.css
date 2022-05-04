@@ -642,6 +642,7 @@ ul.main-img li {
     fill: var(--active-text-color);
 }
 
+
 .modal-comment {
     width: 448px;
     height: 120px;
@@ -665,7 +666,7 @@ ul.main-img li {
 
 
 .modal-field:hover .modal-comment,
-.modal-field:focus .modal-comment {
+.modal-field .modal-comment:focus {
     border: 1px solid var(--active-text-color);
 }
 
