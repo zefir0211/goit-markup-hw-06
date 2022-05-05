@@ -376,7 +376,7 @@
                 <div class="modal-field">
                     <label for="user-tel" class="modal-label"><span class="input-text">Телефон</span></label>
                     <div class="modal-icon-position">
-                        <input type="tel" class="modal-input" name="user-tel" id="user-tel" placeholder="" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}[\-]\d{2}[\-]\d{2}" title="+38 (097) 111-11-11" minlength="15" maxlength="15" required>
+                        <input type="tel" class="modal-input" name="user-tel" id="user-tel" placeholder="" pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}[\-]\d{2}[\-]\d{2}" title="+38(097)111-11-11" minlength="15" maxlength="17" required>
                         <svg class="user-name-icon" width="13" height="13">
                             <use href="./images/icons.svg#tel-icon"></use>
                         </svg>
@@ -396,9 +396,9 @@
                     <textarea class="modal-comment" name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
                 </div>
                 <div class="modal-field-checkbox">
-                    <label for="user-check">
+                    <input class="modal-checkbox is-hidden" name="user-check" type="checkbox" id="user-check">
+                    <label class="user-check" for="user-check">
                     <span class="user-check-text">Соглашаюсь с рассылкой и принимаю <a class="agreement-conditions" href="">Условия договора</a></span></label>
-                    <input class="modal-checkbox" type="checkbox" id="user-check">
                 </div>
                 <button type="submit" class="modal-send-btn"><span class="modal-btn-text">Отправить</span></button>    
             </form>          
